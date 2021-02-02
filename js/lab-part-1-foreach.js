@@ -9,6 +9,16 @@ const foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
 
+
+foods.forEach(function(myFoods) {
+  console.log(`I like ${myFoods}`)
+  
+})
+
+
+
+
+
 // (2) Use the .forEach iterator to loop over the following array of objects and say how delicious each one is.
 // The output should be
 // > Pizza is very delicious
@@ -20,5 +30,12 @@ const foodLevels = [
   {name: "Tacos", level: "mostly"},
   {name: "Cottage Cheese", level: "not very"}
 ];
-
 // your code here
+
+foodLevels.forEach(function(newFood){
+ console.log(newFood.name + ` is ` + `${newFood.level}` + ` delicious`)
+ 
+  
+
+
+})
