@@ -35,7 +35,14 @@ const cities = [
     population: '38 million'
   },
 ]
-
+let myCities = cities.map(function(city){
+  let newCity = {
+    name: city.name,
+    country: city.country
+  }
+  return newCity
+})
+console.log(myCities)
 // (2) following the example of how we made a DIY forEach function, build off it and make a DIY map funciton
 // your DIY map function should take an array and a callback as an arguments and return a new array
 
